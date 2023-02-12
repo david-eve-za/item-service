@@ -2,14 +2,14 @@
 
 This is a simple item service that can be used to create, read, update and delete items.
 This service is used to demonstrate the use of the [Spring Boot](https://spring.io/projects/spring-boot) framework.
-This service uses RestTemplate to communicate with the [Product Service]
-
+1. This service uses RestTemplate at first version to communicate with the [Product Service]
+2. This service uses FeignClient at second version to communicate with the [Product Service]
 
 ## Getting Started
 
 Create a new item:
 
-    curl -X POST -H "Content-Type: application/json" -d '{"name":"Item 1", "description":"Item 1 description"}' http://localhost:8080/items
+    curl -X POST -H "Content-Type: application/json" -d '{"name":"Item 1", "description":"Item 1 description"}' http://localhost:8080/api/items
 
 Get all items:
     
